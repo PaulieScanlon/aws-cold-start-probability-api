@@ -1,0 +1,19 @@
+useDotenv: true
+service: aws-cold-start-probability-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  httpApi:
+    cors: true
+  environment:
+    DATABASE_URL: ${env:DATABASE_URL}
+
+functions:
+  create:
+    handler: v1/create.handler
+    events:
+      - httpApi:
+          path: /create
+          method: POST

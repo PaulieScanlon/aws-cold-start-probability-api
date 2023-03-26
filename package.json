@@ -1,0 +1,28 @@
+{
+  "name": "aws-cold-start-probability-api",
+  "version": "1.0.0",
+  "description": "A Serverless API for Cold Start Probability Tests",
+  "main": "index.js",
+  "scripts": {
+    "eu-central-1": "serverless deploy --region eu-central-1",
+    "deploy": "npm run eu-central-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/aws-cold-start-probability-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/aws-cold-start-probability-api/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/aws-cold-start-probability-api#readme",
+  "dependencies": {
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "serverless": "^3.29.0"
+  }
+}
